@@ -1,7 +1,4 @@
 {
-  "name": "worker-name",
-  "compatibility_date": "2026-05-01",
-  "assets": {
-    "directory": "./dist"
-  }
+  "name": "pureracingwebsite",
+  "compatibility_date": "2026-05-01"
 }
