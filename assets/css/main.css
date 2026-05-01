@@ -2273,33 +2273,37 @@ input, select, textarea {
 
 /* Timer */
 #timer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
 
-  div {
-    width: 15%;
-	aspect-ratio: 1;
-    text-align: center;
-    margin-right: 10px;
-    position: relative;
-	background-color: rgba(0,0,0,0.1);
-	border-radius: 10px;
+	div {
+		width: 15%;
+		aspect-ratio: 1;
+		text-align: center;
+		margin-right: 10px;
+		position: relative;
+		background-color: rgba(0,0,0,0.1);
+		border-radius: 10px;
 
-	@media screen and (max-width: 736px) {
-		width: 30%;
+		@media screen and (max-width: 736px) {
+			width: 30%;
+		}
 	}
-  }
 
-  p {
-    font-style: italic;
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	margin-bottom: 0px;
-	font-size: 3cqmin;
-  }
+	p {
+		font-style: italic;
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		margin-bottom: 0px;
+		font-size: 3cqmin;
+	}
+
+	h1 {
+		font-size: 8cqmin;
+	}
 }
 
 /* Sponsors */
