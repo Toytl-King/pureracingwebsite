@@ -2364,6 +2364,31 @@ input, select, textarea {
 		margin-left: 20px;
 		margin-bottom: 0px;
 	}
+
+	@media screen and (max-width: 736px) {
+		display: block;
+
+		img {
+			width: calc(100% - 15px - 14px);
+			display: none;
+		}
+
+		.info {
+			flex: 0;
+		}
+
+		h2, h3, p {
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 3em;
+		}
+
+		h3 {
+			padding-top: 22px;
+		}
+	}
 }
 
 /* Form */
