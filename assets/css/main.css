@@ -2324,6 +2324,48 @@ input, select, textarea {
 	}
 }
 
+/* Team Member Section */
+.teamMemberPortfolio {
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 15px;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+
+	.info {
+		flex: 1;
+	}
+
+	img {
+		width: 30%;
+		aspect-ratio: 1;
+		float: left;
+		margin-right: 15px;
+		margin-left: 14px;
+		margin-bottom: 13px;
+		margin-top: 13px;
+
+	}
+
+	h2 {
+		height: 25px;
+		padding-top: 10px;
+	}
+
+	h3 {
+		padding-top: 10px;
+		margin-bottom: 0px;
+	}
+
+	p {
+		margin-right: 20px;
+		margin-left: 20px;
+		margin-bottom: 0px;
+	}
+}
+
 /* Form */
 
 	form {
