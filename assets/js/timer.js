@@ -1,4 +1,4 @@
-let date2 = new Date(2027, 3, 31);
+let date2 = new Date(2027, 2, 12);
 const timer = document.getElementById("timer")
 
 function formatSeconds(num) {
