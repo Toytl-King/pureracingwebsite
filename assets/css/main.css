@@ -2324,6 +2324,35 @@ input, select, textarea {
 	}
 }
 
+/* Team Members */
+.memberPortfolioContainer {
+	div {
+		margin-top: 5%;
+		background-color: rgba(0,0,0,0.15);
+	}
+	
+	img {
+		margin-right: 2;
+		max-height: 100px;
+		float: left;
+		aspect-ratio: 1.5;
+	}
+
+	@media screen and (max-width: 736px) {
+		img {
+			width: calc(100% - 10px);
+			margin-left: 5px;
+			margin-top: 5px;
+		}
+		
+		p {
+			text-align: center;
+			margin-left:5px;
+			margin-right: 5px;
+		}
+	}
+}
+
 /* Form */
 
 	form {
