@@ -2324,6 +2324,20 @@ input, select, textarea {
 	}
 }
 
+/* Used on the tiers page to display a single tier */
+.sponsorshipTier {
+	div {
+		background-color: rgb(0,0,0);
+		
+		display: inline-block;
+	}
+	
+	h1 {
+		margin-bottom: 0px;
+		width: auto;
+	}
+}
+
 /* Form */
 
 	form {
