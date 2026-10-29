@@ -2307,21 +2307,81 @@ input, select, textarea {
 }
 
 /* Sponsors */
-.sponsorContainer {
-	div {
-		margin-top: 5%;
-	}
-	
-	img {
-		float: left;
-		margin-right: 2%;
-		width: 13%;
-		aspect-ratio: 1;
-	}
-	
-	h2 {
-		margin-bottom: 20px;
-	}
+:root {
+  --tier-bg: rgba(0, 0, 0, 0.15);
+  --tier-border: #cd7f32;
+  --tier-accent: #cd7f32;
+  --tier-radius: 8px;
+  --tier-padding: 1.5rem;
+}
+
+/* ---------- Container: default (under 1680px) ---------- */
+.sponsorshipTierContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;         /* cards drop to a new row when space runs out */
+  justify-content: center;
+  align-items: stretch;    /* equal card heights */
+  gap: 1rem;
+  margin-bottom: 30px;
+}
+
+/* ---------- Tier card ---------- */
+.sponsorshipTier {
+  flex: 0 1 300px;         /* preferred width 300px, can shrink on small screens */
+  max-width: 320px;
+  background: var(--tier-bg);
+  color: var(--tier-text);
+  border: 2px solid var(--tier-border);
+  border-radius: var(--tier-radius);
+  padding: var(--tier-padding);
+  margin: 0;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+}
+
+.sponsorshipTier h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+  color: var(--tier-accent);
+}
+
+.sponsorshipTier h3 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.sponsorshipTier ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.sponsorshipTier li {
+  padding: 0.5rem 0;
+  border-top: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+}
+
+/* ---------- Tier colors ---------- */
+.sponsorshipTier.bronze   { --tier-border: #cd7f32; --tier-accent: #cd7f32; }
+.sponsorshipTier.silver   { --tier-border: #a8a9ad; --tier-accent: #a8a9ad; }
+.sponsorshipTier.gold     { --tier-border: #d4af37; --tier-accent: #d4af37; }
+.sponsorshipTier.platinum { --tier-border: #8fa3ad; --tier-accent: #8fa3ad; }
+.sponsorshipTier.diamond  { --tier-border: #4fc3f7; --tier-accent: #4fc3f7; }
+
+/* ---------- Wide screens (1680px and up): single row ---------- */
+@media (min-width: 1680px) {
+  .sponsorshipTierContainer {
+    flex-wrap: nowrap;     /* always one row */
+  }
+
+  .sponsorshipTier {
+    flex: 1 1 0;           /* all five cards share the width equally */
+    min-width: 0;
+    max-width: none;
+  }
 }
 
 /* Team Members */
